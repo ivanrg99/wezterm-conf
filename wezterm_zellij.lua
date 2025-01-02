@@ -4,11 +4,11 @@ local config = {}
 
 -- config.font = wezterm.font 'Inconsolata Nerd Font'
 -- config.font = wezterm.font 'Terminess Nerd Font Mono'
--- config.font = wezterm.font '3270 Nerd Font Mono'
+config.font = wezterm.font '3270 Nerd Font Mono'
 -- config.font = wezterm.font 'BigBlueTermPlus Nerd Font Mono'
-config.font = wezterm.font("JetBrains Mono")
+-- config.font = wezterm.font("JetBrains Mono")
 config.harfbuzz_features = { "calt=0", "clig=0", "liga=0" }
-config.font_size = 14.0
+config.font_size = 15.0
 config.initial_cols = 200
 config.initial_rows = 200
 config.window_background_opacity = 1
@@ -17,8 +17,6 @@ config.color_scheme = "Dark Pastel"
 config.hide_tab_bar_if_only_one_tab = true
 config.audible_bell = "Disabled"
 config.window_close_confirmation = 'AlwaysPrompt'
-
--- config.dpi = 180.0
 
 -- config.default_prog = { '/opt/homebrew/bin/zellij' }
 -- config.default_prog = {"/opt/homebrew/bin/fish", "-c", "zellij"}
@@ -84,7 +82,7 @@ config.keys = {
   },
   {
 
-    key = "f",
+    key = "s",
     mods = "CMD",
     action = act.SendKey { key = 'f', mods = 'ALT'},
   },
@@ -178,52 +176,5 @@ config.keys = {
 
 
 
-
-config.keys = {{
-
-    key = "1",
-    mods = "ALT",
-    action = wezterm.action.ActivateTab(0)
-}, {
-    key = "2",
-    mods = "ALT",
-    action = wezterm.action.ActivateTab(1)
-}, {
-    key = "3",
-    mods = "ALT",
-    action = wezterm.action.ActivateTab(2)
-}, {
-    key = "4",
-    mods = "ALT",
-    action = wezterm.action.ActivateTab(3)
-}, {
-    key = "5",
-    mods = "ALT",
-    action = wezterm.action.ActivateTab(4)
-}, {
-    key = "6",
-    mods = "ALT",
-    action = wezterm.action.ActivateTab(5)
-}, {
-    key = "7",
-    mods = "ALT",
-    action = wezterm.action.ActivateTab(6)
-}, {
-    key = "8",
-    mods = "ALT",
-    action = wezterm.action.ActivateTab(7)
-}, {
-    key = "9",
-    mods = "ALT",
-    action = wezterm.action.ActivateTab(8)
-}, {
-    key = "0",
-    mods = "ALT",
-    action = wezterm.action.ActivateTab(9)
-}, {
-    key = "t",
-    mods = "ALT",
-    action = wezterm.action.SpawnTab("CurrentPaneDomain")
-}}
 
 return config
