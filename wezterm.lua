@@ -172,6 +172,12 @@ config.keys = {
     mods = "CMD",
     action = act.SendKey { key = '9', mods = 'ALT'},
   },
+  {
+
+    key = "s",
+    mods = "CMD",
+    action = act.SendKey { key = 's', mods = 'CTRL'},
+  },
 
 }
 
